@@ -1,4 +1,4 @@
-//Alexander Rollison 1001681800 Alexander.rollison@mavs.uta.edu AlexanderRollison.CSE@gmail.com
+//Alexander Rollison
 #include <gtkmm.h>
 #include <iostream>
 
@@ -83,7 +83,7 @@ MyWindow::MyWindow()
 	//Create Entry and use grab_focus to highlight if true
 	Gtk::Entry *MyEntry = Gtk::manage(new Gtk::Entry());
 	MyEntry->set_text("Enter Guess Here");
-    MyEntry->set_activates_default(true);
+    	MyEntry->set_activates_default(true);
 	VboxEntry->add(*MyEntry);
 	MyEntry->grab_focus();
 	MyEntry->signal_activate().connect(sigc::bind<Gtk::Entry*>(sigc::mem_fun(*this, &MyWindow::on_Ok_Button_click), MyEntry));
