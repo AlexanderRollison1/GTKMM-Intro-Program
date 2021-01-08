@@ -1,6 +1,4 @@
-#Alexander Rollison 1001681800
-#makefile for C++ program
-SRC1 = Code7_1001681800.cpp
+SRC1 = Code7.cpp
 OBJ1 = $(SRC1:.cpp=.o)
 EXE = $(SRC1:.cpp=.e)
 
